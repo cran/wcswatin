@@ -1,6 +1,6 @@
 Package: wcswatin
 Title: Weather and Climate Inputs for 'SWAT'
-Version: 0.1.1
+Version: 0.2.0
 Authors@R: c(
     person(given = "Réginal",
            family = "Exavier",
@@ -29,16 +29,15 @@ Encoding: UTF-8
 Depends: R (>= 4.1.0)
 Suggests: future, knitr, rmarkdown, testthat (>= 3.0.0), withr
 Config/testthat/edition: 3
-Imports: dplyr, tidyr, raster, ncdf4, data.table, glue, stringr, sf,
-        lubridate, hyfo, ggplot2, terra, future.apply, progressr,
-        methods
+Imports: dplyr, tidyr, ncdf4, data.table, glue, stringr, sf, lubridate,
+        hyfo, ggplot2, terra, future.apply, progressr, methods
 URL: https://github.com/reginalexavier/wcswatin,
         https://reginalexavier.github.io/wcswatin/
 BugReports: https://github.com/reginalexavier/wcswatin/issues
 VignetteBuilder: knitr
-Config/roxygen2/version: 8.0.0
+Config/roxygen2/version: 8.1.0
 NeedsCompilation: no
-Packaged: 2026-07-10 16:55:33 UTC; tredgi
+Packaged: 2026-09-11 04:16:03 UTC; tredgi
 Author: Réginal Exavier [aut, cre] (ORCID:
     <https://orcid.org/0000-0002-5237-523X>),
   Fernando Shinji Kawakubo [aut] (ORCID:
@@ -46,4 +45,4 @@ Author: Réginal Exavier [aut, cre] (ORCID:
   Peter Zeilhofer [aut] (ORCID: <https://orcid.org/0000-0002-7579-6408>)
 Maintainer: Réginal Exavier <reginalexavier@rocketmail.com>
 Repository: CRAN
-Date/Publication: 2026-07-19 13:10:02 UTC
+Date/Publication: 2026-09-11 07:10:03 UTC

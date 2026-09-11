@@ -5,11 +5,12 @@
 
 <!-- badges: start -->
 
+[![CRAN
+status](https://www.r-pkg.org/badges/version/wcswatin)](https://CRAN.R-project.org/package=wcswatin)
 [![R-CMD-check](https://github.com/reginalexavier/wcswatin/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/reginalexavier/wcswatin/actions/workflows/R-CMD-check.yaml)
 [![License: GPL
 v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Codecov test
-coverage](https://codecov.io/gh/reginalexavier/wcswatin/branch/main/graph/badge.svg)](https://app.codecov.io/gh/reginalexavier/wcswatin?branch=main)
+[![codecov](https://codecov.io/gh/reginalexavier/wcswatin/branch/main/graph/badge.svg?token=ZVBTTCNBKX)](https://app.codecov.io/gh/reginalexavier/wcswatin)
 <!-- badges: end -->
 
 ## Overview
@@ -47,11 +48,17 @@ Developed with funding from the [Critical Ecosystem Partnership Fund
 
 ## Installation
 
-Install the development version from GitHub:
+Install the released version from CRAN:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("reginalexavier/wcswatin")
+install.packages("wcswatin")
+```
+
+To install the development version from GitHub:
+
+``` r
+# install.packages("remotes")
+remotes::install_github("reginalexavier/wcswatin")
 ```
 
 ## Quick Start
@@ -102,14 +109,10 @@ ts_point_to_files(
 
 ## Workflow Overview
 
-<div class="figure">
+<img src="man/figures/wcswatin-workflow-compact.png" alt="Compact diagram of the gridded-data and station-data workflows implemented by wcswatin" width="100%" />
 
-<img src="man/figures/wcswatin_flowchart150222.png" alt="Conceptual workflow of the wcswatin package" width="100%" />
-<p class="caption">
-Conceptual workflow of the wcswatin package
-</p>
-
-</div>
+[View the complete workflow in full
+resolution](https://github.com/reginalexavier/wcswatin/blob/main/man/figures/wcswatin-workflow.png)
 
 ## Main Functions
 
@@ -214,18 +217,25 @@ by `wcswatin`.
 
 ## Citation
 
+To obtain the current citation in R, run:
+
+``` r
+citation("wcswatin")
+```
+
 If you use wcswatin in your research, please cite:
 
-Exavier R, Kawakubo F, Zeilhofer P (2026). wcswatin: Weather & Climate
-SWAT INput (WCSWATIN). R package version 0.1.1,
-<https://github.com/reginalexavier/wcswatin>
+Exavier R, Kawakubo F, Zeilhofer P (2026). *wcswatin: Weather and
+Climate Inputs for ‘SWAT’*. <doi:10.32614/CRAN.package.wcswatin>. R
+package version 0.2.0, <https://CRAN.R-project.org/package=wcswatin>.
 
-    @software{
-      title = {wcswatin: Weather & Climate SWAT INput (WCSWATIN)},
+    @Manual{
+      title = {wcswatin: Weather and Climate Inputs for 'SWAT'},
       author = {Réginal Exavier and Fernando Shinji Kawakubo and Peter Zeilhofer},
       year = {2026},
-      note = {R package version 0.1.1},
-      url = {https://github.com/reginalexavier/wcswatin},
+      note = {R package version 0.2.0},
+      url = {https://CRAN.R-project.org/package=wcswatin},
+      doi = {10.32614/CRAN.package.wcswatin},
     }
 
 ## License
